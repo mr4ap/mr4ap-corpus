@@ -260,7 +260,7 @@ Each filename follows the following syntax `sentence_00000.json`.
 ## Corpus statistics
 
 In this very first version, 100 short French sentences from the TaPaCo corpus 
-[(Scherrer, 2020)](https://helda.helsinki.fi/bitstream/handle/10138/327739/multitatoeba_lrec2020.pdf?sequence=1) 
+[(Scherrer, 2020)](https://helda.helsinki.fi/bitstream/handle/10138/327739/multitatoeba_lrec2020.pdf?sequence=1)) 
 are included. Below are some additional insights.
 
 | Item   | Number |
