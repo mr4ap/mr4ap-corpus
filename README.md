@@ -11,6 +11,250 @@ the currently available JSON files. Those files present two main fields:
 * `text`: the plain text that is annotated,
 * `graph`: the corresponding graph containing the annotations.
 
+Here is an example for the following sentence: `Luc a mangé une pomme`.
+
+```json
+{
+    "text": "Luc a mangé une pomme.",
+    "graph":
+    {
+        "predicates":
+        [
+            {
+                "id": 100053566,
+                "value":
+                [
+                    "type"
+                ],
+                "source": "Luc",
+                "refSource": "0-0",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": -1384893762,
+                        "role": "Experiencer",
+                        "tags":
+                        [
+                            "Thing/Concrete/Animate/Livingbeing/Human"
+                        ],
+                        "value": "Luc",
+                        "refValue": "0-0"
+                    },
+                    {
+                        "id": 100053567,
+                        "role": "Attribute",
+                        "tags":
+                        [],
+                        "value": "masculine",
+                        "refValue": "0-0"
+                    }
+                ]
+            },
+            {
+                "id": 100053568,
+                "value":
+                [
+                    "type"
+                ],
+                "source": "Luc",
+                "refSource": "0-0",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": -1384893762,
+                        "role": "Experiencer",
+                        "tags":
+                        [
+                            "Thing/Concrete/Animate/Livingbeing/Human"
+                        ],
+                        "value": "Luc",
+                        "refValue": "0-0"
+                    },
+                    {
+                        "id": 100053569,
+                        "role": "Attribute",
+                        "tags":
+                        [],
+                        "value": "Thing/Concrete/Animate/Livingbeing/Human",
+                        "refValue": "0-0"
+                    }
+                ]
+            },
+            {
+                "id": -2047209676,
+                "value":
+                [
+                    "eat-39.1-1"
+                ],
+                "source": "manger",
+                "refSource": "0-2",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": 100053570,
+                        "role": "TimeMax",
+                        "tags":
+                        [],
+                        "value": "2023-03-09T08:35:52.834852272",
+                        "refValue": "0-2"
+                    },
+                    {
+                        "id": -1384893762,
+                        "role": "Agent",
+                        "tags":
+                        [
+                            "Thing/Concrete/Animate/Livingbeing/Human"
+                        ],
+                        "value": "Luc",
+                        "refValue": "0-0"
+                    },
+                    {
+                        "id": 1541726646,
+                        "role": "Patient",
+                        "tags":
+                        [
+                            "Thing/Concrete"
+                        ],
+                        "value": "pomme",
+                        "refValue": "0-4"
+                    }
+                ]
+            },
+            {
+                "id": 100053571,
+                "value":
+                [
+                    "cardinality"
+                ],
+                "source": "un",
+                "refSource": "0-3",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": 1541726646,
+                        "role": "Theme",
+                        "tags":
+                        [
+                            "Thing/Concrete"
+                        ],
+                        "value": "pomme",
+                        "refValue": "0-4"
+                    },
+                    {
+                        "id": 100053572,
+                        "role": "Measureexact",
+                        "tags":
+                        [],
+                        "value": "1",
+                        "refValue": "0-3"
+                    }
+                ]
+            },
+            {
+                "id": 100053573,
+                "value":
+                [
+                    "type"
+                ],
+                "source": "pomme",
+                "refSource": "0-4",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": 1541726646,
+                        "role": "Experiencer",
+                        "tags":
+                        [
+                            "Thing/Concrete"
+                        ],
+                        "value": "pomme",
+                        "refValue": "0-4"
+                    },
+                    {
+                        "id": 100053574,
+                        "role": "Attribute",
+                        "tags":
+                        [],
+                        "value": "Thing/Concrete",
+                        "refValue": "0-4"
+                    }
+                ]
+            },
+            {
+                "id": 100053575,
+                "value":
+                [
+                    "polarity"
+                ],
+                "source": "manger",
+                "refSource": "0-2",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": -2047209676,
+                        "role": "Experiencer",
+                        "tags":
+                        [],
+                        "value": "mangé",
+                        "refValue": "0-2"
+                    },
+                    {
+                        "id": 100053576,
+                        "role": "Attribute",
+                        "tags":
+                        [],
+                        "value": "Pos",
+                        "refValue": "0-2"
+                    }
+                ]
+            },
+            {
+                "id": 100053577,
+                "value":
+                [
+                    "aspect"
+                ],
+                "source": "manger",
+                "refSource": "0-2",
+                "negation": false,
+                "inferred": false,
+                "arguments":
+                [
+                    {
+                        "id": -2047209676,
+                        "role": "Experiencer",
+                        "tags":
+                        [],
+                        "value": "mangé",
+                        "refValue": "0-2"
+                    },
+                    {
+                        "id": 100053578,
+                        "role": "Attribute",
+                        "tags":
+                        [],
+                        "value": "performance",
+                        "refValue": "0-2"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
 Each filename follows the following syntax `sentence_00000.json`.
 
 ## Corpus statistics
