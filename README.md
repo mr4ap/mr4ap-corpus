@@ -18,7 +18,7 @@ Here is an example for the following sentence: `Luc a mangé une pomme`.
 {
     "id": "00000",
     "text": "Luc a mangé une pomme",
-    "owl": ":mr4ap/kb/100000004 a owl:NamedIndividual;\n  rdfs:label \"2023-03-23T09:45:11.648919675\" .\n\n:mr4ap/kb/1718136849 a owl:NamedIndividual, :mr4ap/ontology/100000001,\n    :mr4ap/ontology/Human, :Httpwwww3org200207owlNamedIndividual;\n  rdfs:label \"Luc\" .\n\n:mr4ap/ontology/100000001 a owl:NamedIndividual;\n  rdfs:label \"Masculine\" .\n\n:mr4ap/ontology/Human a owl:NamedIndividual .\n\n:Httpwwww3org200207owlNamedIndividual a owl:NamedIndividual .\n\n:mr4ap/kb/446309268 a owl:NamedIndividual, :mr4ap/ontology/Concrete,\n    :Httpwwww3org200207owlNamedIndividual;\n  :has_measureexact \"1\";\n  rdfs:label \"Pomme\", \"pomme\" .\n\n:mr4ap/ontology/Concrete a owl:NamedIndividual .\n\n:mr4ap/kb/50486795 a owl:NamedIndividual, :mr4ap/ontology/Eat,\n    :mr4ap/ontology/Event;\n  :has_agent :mr4ap/kb/1718136849;\n  :has_patient :mr4ap/kb/446309268;\n  :has_timemax :mr4ap/kb/100000004;\n  :has_aspect \"performance\";\n  :has_polarity \"Pos\";\n  rdfs:label \"mangé\" .\n\n:mr4ap/ontology/Eat a owl:NamedIndividual .\n\n:mr4ap/ontology/Event a owl:NamedIndividual ."
+    "owl": ""
 }
 ```
 
