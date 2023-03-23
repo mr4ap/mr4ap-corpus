@@ -19,14 +19,14 @@ Here is an example for the following sentence: `Luc a mangé une pomme`.
     "id": "00000",
     "text": "Luc a mangé une pomme",
     "owl": ":mr4ap/kb/100000004 a owl:NamedIndividual;
-  rdfs:label "2023-03-23T09:45:11.648919675" .
+  rdfs:label \"2023-03-23T09:45:11.648919675\" .
 
 :mr4ap/kb/1718136849 a owl:NamedIndividual, :mr4ap/ontology/100000001,
     :mr4ap/ontology/Human, :Httpwwww3org200207owlNamedIndividual;
-  rdfs:label "Luc" .
+  rdfs:label \"Luc\" .
 
 :mr4ap/ontology/100000001 a owl:NamedIndividual;
-  rdfs:label "Masculine" .
+  rdfs:label \"Masculine\" .
 
 :mr4ap/ontology/Human a owl:NamedIndividual .
 
@@ -34,8 +34,8 @@ Here is an example for the following sentence: `Luc a mangé une pomme`.
 
 :mr4ap/kb/446309268 a owl:NamedIndividual, :mr4ap/ontology/Concrete,
     :Httpwwww3org200207owlNamedIndividual;
-  :has_measureexact "1";
-  rdfs:label "Pomme", "pomme" .
+  :has_measureexact \"1\";
+  rdfs:label \"Pomme\", \"pomme\" .
 
 :mr4ap/ontology/Concrete a owl:NamedIndividual .
 
@@ -44,9 +44,9 @@ Here is an example for the following sentence: `Luc a mangé une pomme`.
   :has_agent :mr4ap/kb/1718136849;
   :has_patient :mr4ap/kb/446309268;
   :has_timemax :mr4ap/kb/100000004;
-  :has_aspect "performance";
-  :has_polarity "Pos";
-  rdfs:label "mangé" .
+  :has_aspect \"performance\";
+  :has_polarity \"Pos\";
+  rdfs:label \"mangé\" .
 
 :mr4ap/ontology/Eat a owl:NamedIndividual .
 
