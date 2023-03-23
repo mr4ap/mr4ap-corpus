@@ -7,251 +7,50 @@ This corpus is supposed to grow in size.
 ## Repository contents
 
 This repository hosts the __MR4AP__ corpus v0.1. The `files` folder contains all
-the currently available JSON files. Those files present two main fields:
+the currently available JSON files. Those files present three main fields:
+* `id`: the text id,
 * `text`: the plain text that is annotated,
-* `graph`: the corresponding graph containing the annotations.
+* `owl`: the corresponding OWL containing the annotations.
 
 Here is an example for the following sentence: `Luc a mangé une pomme`.
 
 ```json
 {
-    "text": "Luc a mangé une pomme.",
-    "graph":
-    {
-        "predicates":
-        [
-            {
-                "id": 100053566,
-                "value":
-                [
-                    "type"
-                ],
-                "source": "Luc",
-                "refSource": "0-0",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": -1384893762,
-                        "role": "Experiencer",
-                        "tags":
-                        [
-                            "Thing/Concrete/Animate/Livingbeing/Human"
-                        ],
-                        "value": "Luc",
-                        "refValue": "0-0"
-                    },
-                    {
-                        "id": 100053567,
-                        "role": "Attribute",
-                        "tags":
-                        [],
-                        "value": "masculine",
-                        "refValue": "0-0"
-                    }
-                ]
-            },
-            {
-                "id": 100053568,
-                "value":
-                [
-                    "type"
-                ],
-                "source": "Luc",
-                "refSource": "0-0",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": -1384893762,
-                        "role": "Experiencer",
-                        "tags":
-                        [
-                            "Thing/Concrete/Animate/Livingbeing/Human"
-                        ],
-                        "value": "Luc",
-                        "refValue": "0-0"
-                    },
-                    {
-                        "id": 100053569,
-                        "role": "Attribute",
-                        "tags":
-                        [],
-                        "value": "Thing/Concrete/Animate/Livingbeing/Human",
-                        "refValue": "0-0"
-                    }
-                ]
-            },
-            {
-                "id": -2047209676,
-                "value":
-                [
-                    "eat-39.1-1"
-                ],
-                "source": "manger",
-                "refSource": "0-2",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": 100053570,
-                        "role": "TimeMax",
-                        "tags":
-                        [],
-                        "value": "2023-03-09T08:35:52.834852272",
-                        "refValue": "0-2"
-                    },
-                    {
-                        "id": -1384893762,
-                        "role": "Agent",
-                        "tags":
-                        [
-                            "Thing/Concrete/Animate/Livingbeing/Human"
-                        ],
-                        "value": "Luc",
-                        "refValue": "0-0"
-                    },
-                    {
-                        "id": 1541726646,
-                        "role": "Patient",
-                        "tags":
-                        [
-                            "Thing/Concrete"
-                        ],
-                        "value": "pomme",
-                        "refValue": "0-4"
-                    }
-                ]
-            },
-            {
-                "id": 100053571,
-                "value":
-                [
-                    "cardinality"
-                ],
-                "source": "un",
-                "refSource": "0-3",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": 1541726646,
-                        "role": "Theme",
-                        "tags":
-                        [
-                            "Thing/Concrete"
-                        ],
-                        "value": "pomme",
-                        "refValue": "0-4"
-                    },
-                    {
-                        "id": 100053572,
-                        "role": "Measureexact",
-                        "tags":
-                        [],
-                        "value": "1",
-                        "refValue": "0-3"
-                    }
-                ]
-            },
-            {
-                "id": 100053573,
-                "value":
-                [
-                    "type"
-                ],
-                "source": "pomme",
-                "refSource": "0-4",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": 1541726646,
-                        "role": "Experiencer",
-                        "tags":
-                        [
-                            "Thing/Concrete"
-                        ],
-                        "value": "pomme",
-                        "refValue": "0-4"
-                    },
-                    {
-                        "id": 100053574,
-                        "role": "Attribute",
-                        "tags":
-                        [],
-                        "value": "Thing/Concrete",
-                        "refValue": "0-4"
-                    }
-                ]
-            },
-            {
-                "id": 100053575,
-                "value":
-                [
-                    "polarity"
-                ],
-                "source": "manger",
-                "refSource": "0-2",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": -2047209676,
-                        "role": "Experiencer",
-                        "tags":
-                        [],
-                        "value": "mangé",
-                        "refValue": "0-2"
-                    },
-                    {
-                        "id": 100053576,
-                        "role": "Attribute",
-                        "tags":
-                        [],
-                        "value": "Pos",
-                        "refValue": "0-2"
-                    }
-                ]
-            },
-            {
-                "id": 100053577,
-                "value":
-                [
-                    "aspect"
-                ],
-                "source": "manger",
-                "refSource": "0-2",
-                "negation": false,
-                "inferred": false,
-                "arguments":
-                [
-                    {
-                        "id": -2047209676,
-                        "role": "Experiencer",
-                        "tags":
-                        [],
-                        "value": "mangé",
-                        "refValue": "0-2"
-                    },
-                    {
-                        "id": 100053578,
-                        "role": "Attribute",
-                        "tags":
-                        [],
-                        "value": "performance",
-                        "refValue": "0-2"
-                    }
-                ]
-            }
-        ]
-    }
+    "id": "00000",
+    "text": "Luc a mangé une pomme",
+    "owl": ":mr4ap/kb/100000004 a owl:NamedIndividual;
+  rdfs:label "2023-03-23T09:45:11.648919675" .
+
+:mr4ap/kb/1718136849 a owl:NamedIndividual, :mr4ap/ontology/100000001,
+    :mr4ap/ontology/Human, :Httpwwww3org200207owlNamedIndividual;
+  rdfs:label "Luc" .
+
+:mr4ap/ontology/100000001 a owl:NamedIndividual;
+  rdfs:label "Masculine" .
+
+:mr4ap/ontology/Human a owl:NamedIndividual .
+
+:Httpwwww3org200207owlNamedIndividual a owl:NamedIndividual .
+
+:mr4ap/kb/446309268 a owl:NamedIndividual, :mr4ap/ontology/Concrete,
+    :Httpwwww3org200207owlNamedIndividual;
+  :has_measureexact "1";
+  rdfs:label "Pomme", "pomme" .
+
+:mr4ap/ontology/Concrete a owl:NamedIndividual .
+
+:mr4ap/kb/50486795 a owl:NamedIndividual, :mr4ap/ontology/Eat,
+    :mr4ap/ontology/Event;
+  :has_agent :mr4ap/kb/1718136849;
+  :has_patient :mr4ap/kb/446309268;
+  :has_timemax :mr4ap/kb/100000004;
+  :has_aspect "performance";
+  :has_polarity "Pos";
+  rdfs:label "mangé" .
+
+:mr4ap/ontology/Eat a owl:NamedIndividual .
+
+:mr4ap/ontology/Event a owl:NamedIndividual ."
 }
 ```
 
